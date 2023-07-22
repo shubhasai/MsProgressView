@@ -53,7 +53,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.shubhasai'
                 artifactId = 'progress-view'
-                version = '1.0'
+                version = '1.0.1'
             }
         }
     }
