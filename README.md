@@ -1,1 +1,96 @@
 # MsProgressView
+[![](https://jitpack.io/v/shubhasai/MsProgressView.svg)](https://jitpack.io/#shubhasai/MsProgressView)
+
+MsProgressView is an Android library that provides customizable circular and horizontal progress views to display ongoing tasks, loading animations, or any other progress indication purposes.
+
+## Features
+
+- Circular Progress View: A customizable circular progress view with various styles and animation options.
+- Horizontal Progress View: A customizable horizontal progress view for linear progress display.
+- Easy Integration: Simple integration with your Android project using Gradle or Maven.
+- Customizable Appearance: Customize the colours, sizes, and other attributes to match your app's design.
+- Progress Indicators: Show progress in percentages or any other appropriate format.
+
+## Ingeration 
+You can install the library by adding the following dependency to your project:
+
+Step 1: Add this to setting.gradle file
+```gradle
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+Step 2: Add this to your App Level Gradle File: (Replace the Tag with the Latest Version of the MsProgressView)
+```gradle
+dependencies {
+	        implementation 'com.github.shubhasai:MsProgressView:Tag'
+	}
+```
+
+## Examples
+
+1. Horizontal Progress View:
+   ```kotlin
+   HorizontalProgress(percentage =0.5f,
+                            number = 100,
+                            modifier = Modifier
+                            .padding(16.dp))
+   ```
+   Preview:
+   
+   <img src="https://github.com/shubhasai/MsProgressView/assets/78340623/98ef0059-e6a9-4be9-b8d7-fa6c36b127d8" alt="Image" width="150" height="300">
+3. Circular Progress View:
+   ```kotlin
+   CircularProgress(percentage =0.85f,
+                            number = 100,
+                            modifier = Modifier
+                            .padding(16.dp))
+   ```
+   Preview:
+   
+   <img src="https://github.com/shubhasai/MsProgressView/assets/78340623/4e70b452-aa24-4656-9ada-864a8fe1374d" alt="Image" width="150" height="300">
+
+   ## More Customization :
+
+   1. Horizontal Progress View:
+      
+        | Parameter           	| Purpose                                   	| Default Value   	|
+        |---------------------	|-------------------------------------------	|-----------------	|
+        | Modifier            	| Modifier for the composable function      	| Modifier        	|
+        | percentage          	| Progress percentage value                 	| Float           	|
+        | number              	| Max Progress value in Integer               | Int             	|
+        | fontSize            	| Font size for the text                    	| 28.sp           	|
+        | width               	| Width of the progress view                	| 350.dp          	|
+        | height              	| Height of the progress view               	| 50.dp           	|
+        | color               	| Color of the progress indicator           	| Color.Blue      	|
+        | animDuration        	| Duration of the animation in milliseconds 	| 1000            	|
+        | animDelay           	| Delay before the animation starts         	| 0               	|
+        | radius              	| Corner radius of the progress view        	| 20.dp           	|
+        | backgroundColor     	| Background color of the progress view     	| Color.LightGray 	|
+        | textColor           	| Color of the text                         	| Color.Black     	|
+        | percentageTextColor 	| Color of the percentage text              	| Color.White     	|
+        | percentageTextSize  	| Font size for the percentage text         	| 20.sp           	|
+
+
+   2. Circular Progress View:
+
+      | Parameter      | Purpose                                | Value         |
+      |----------------|----------------------------------------|---------------|
+      | Modifier       | Modifier for the composable function   | Modifier      |
+      | percentage     | Progress percentage value              | Float         |
+      | number         | Max Progress value in Integer          | Int           |
+      | fontSize       | Font size for the text                 | 28.sp         |
+      | radius         | Radius of the circular progress view   | 50.dp         |
+      | color          | Color of the progress indicator        | Color.Blue    |
+      | strokeWidth    | Width of the progress indicator        | 8.dp          |
+      | animDuration   | Duration of the animation (in ms)      | 1000          |
+      | animDelay      | Delay before the animation starts      | 0             |
+      | capRounded     | Whether to use rounded line cap        | true          |
+      | startAngle     | Starting angle of the progress arc     | -90f          |
+      | maxAngle       | Maximum angle of the progress arc      | 360f          |
+      | textColor      | Color of the text                      | Color.Black   |
+      | useCenter      | Whether to include center in the arc   | false         |
