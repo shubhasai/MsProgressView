@@ -52,8 +52,8 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 groupId = 'com.github.shubhasai'
-                artifactId = 'progress-view'
-                version = '1.0.1'
+                artifactId = 'MsProgressView'
+                version = '0.0.1'
             }
         }
     }
