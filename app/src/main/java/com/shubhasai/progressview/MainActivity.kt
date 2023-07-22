@@ -11,9 +11,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.shubhasai.progress_view.CircularProgress
 import com.shubhasai.progressview.ui.theme.ProgressViewTheme
-import com.shubhasai.progress_view.HorizontalProgress
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,9 +24,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     Column() {
-                        HorizontalProgress(percentage = 0.75f, number = 100, modifier = Modifier.padding(16.dp))
-                        CircularProgress(percentage = 0.65f, number = 360, modifier = Modifier.padding(16.dp))
-                        CircularProgress(percentage = 1f, number = 100, modifier = Modifier.padding(16.dp), useCenter = false, maxAngle = 180f, startAngle = -180f)
+
                     }
 
                 }
