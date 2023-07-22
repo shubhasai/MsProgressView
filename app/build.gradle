@@ -64,6 +64,5 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
-    implementation 'com.github.shubhasai:MsProgressView:1.0.2'
-    implementation project(':progress-view')
+    implementation 'com.github.shubhasai:MsProgressView:1.0.3'
 }

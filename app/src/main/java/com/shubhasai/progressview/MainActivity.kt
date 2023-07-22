@@ -45,8 +45,8 @@ class MainActivity : ComponentActivity() {
                         CircularProgress(percentage =0.85f,
                             number = 100,
                             modifier = Modifier
-                            .padding(16.dp))
-                        
+                                .padding(16.dp))
+
                         CircularFillProgress(percentage = 0.65f, number =100, viewSize = 100.dp,
                             modifier = Modifier
                                 .padding(16.dp)
@@ -71,10 +71,7 @@ class MainActivity : ComponentActivity() {
                                     .padding(16.dp)
                                     .size(100.dp), animDuration = 2000)
                         }
-
-                        
                     }
-
                 }
             }
         }
