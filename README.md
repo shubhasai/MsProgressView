@@ -1,6 +1,8 @@
 # MsProgressView
 [![](https://jitpack.io/v/shubhasai/MsProgressView.svg)](https://jitpack.io/#shubhasai/MsProgressView)
 
+![MsProgressViewBanner](https://github.com/shubhasai/MsProgressView/assets/78340623/e16317c2-eda4-474d-b51a-0c7a6c825041)
+
 MsProgressView is an Android library that provides customizable circular and horizontal progress views to display ongoing tasks, loading animations, or any other progress indication purposes.
 
 ## Features
